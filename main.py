@@ -3,7 +3,11 @@ from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import HTMLResponse
 
+from routes.notice import router as notice_router
+
 app = FastAPI()
+
+app.include_router(notice_router, prefix="/notice", tags=["notice"])
 
 # static 폴더를 /static 경로에 마운트
 app.mount("/static", StaticFiles(directory="static"), name="static")
