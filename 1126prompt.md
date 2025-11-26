@@ -1,3 +1,5 @@
+```
+
 {
   "task": "FastAPI 기반 공지사항 CRUD 기능 생성 및 기존 프로젝트 업데이트",
   "instructions": {
@@ -62,3 +64,5 @@
     "codeblock_languages": ["python", "html"]
   }
 }
+
+```
